@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'components/styles.html' %}
+    <title> {% block title %}{% endblock %} | Blogy-Home</title>
+</head>
+
+<body>
+
+{% include "components/header.html" %}
+{% block content %} {% endblock %}
+{% include "components/footer.html" %}
+{% include 'components/scripts.html' %}
+</body>
+
+</html>
